@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    background: #eceaff;
+}
+
+/* Adding padding around the company title */
+.company-title {
+    padding: 8px;
+}
+
+/* Sign in feature */
+.Signin {
+
+    display: flex;
+    justify-content: center;
+    font-size: large;
+
+}
+
+.Login {
+    
+    display: flex;
+    justify-content: center;
+    font-size: large;
+
+}
+
+/* Styling the page */
+.hero{
+
+    width: 100%;
+    min-height: 100vh;
+    background: #eceaff;
+    color: #525252;
+
+}
+
+/* Styling the nav bar */
+.hero nav{
+
+    background: #1a1a1a;
+    width: 100%;
+    padding: 10px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Styling the individual navigation items */
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    position: relative;
+}
+
+/* Styling the text in the dropdown menu */
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+/* -- About Section -- */
+
+/* Wrapping the dropdown menu, initially hidden, positioned relative to the parent item */
+.about-menu-wrap {
+    position: absolute;
+    top: 100%;
+    left: -100%; 
+    width: 300px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 1000;
+}
+
+/* Making the dropdown visible when hovering over the parent navigation item */
+nav ul li:hover .about-menu-wrap {
+    max-height: 400px;
+}
+
+/* Styling the dropdown menu container */
+.about-menu{
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    z-index: 1000;
+}
+
+/* Styling the horizontal rule within the dropdown menu */
+.about-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0px 10px;
+    z-index: 1000;
+}
+
+/* Styling the links within the dropdown menu */
+.about-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+    z-index: 1000;
+}
+
+/* Styling the text within the dropdown links */
+.about-menu-link p{
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling the images within the dropdown links (if we choose to add images) */
+.about-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    margin-right: 15px;
+    z-index: 1000;
+}
+
+/* Styling the arrow or icon in the dropdown links */
+.about-menu-link span{
+    font-size:  17px;
+    font-weight: bolder;
+    transition: transform 0.5s;
+    z-index: 1000;
+}
+
+/* Adding a small shift to the right when hovering over the dropdown link */
+.about-menu-link:hover span{
+    transform: translateX(5px);
+    z-index: 1000;
+}
+
+/* Making the text within the dropdown link bolder on hover */
+.about-menu-link:hover p{
+    font-weight: 600;
+    z-index: 1000;
+}
+
+/* -- Restaurant Section -- */
+
+.restaurant-menu-wrap {
+    position: absolute;
+    top: 100%;
+    left: -50%; 
+    width: 300px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    z-index: 1000;
+}
+
+/* Making the dropdown visible when hovering over the parent navigation item */
+nav ul li:hover .restaurant-menu-wrap {
+    max-height: 400px;
+}
+
+/* Styling the dropdown menu container */
+.restaurant-menu{
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    z-index: 1000;
+}
+
+/* Styling the horizontal rule within the dropdown menu */
+.restaurant-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0px 10px;
+    z-index: 1000;
+}
+
+/* Styling the links within the dropdown menu */
+.restaurant-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+    z-index: 1000;
+}
+
+/* Styling the text within the dropdown links */
+.restaurant-menu-link p{
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Styling the images within the dropdown links (if we choose to add images) */
+.restaurant-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    margin-right: 15px;
+    z-index: 1000;
+}
+
+/* Styling the arrow or icon in the dropdown links */
+.restaurant-menu-link span{
+    font-size:  17px;
+    font-weight: bolder;
+    transition: transform 0.5s;
+    z-index: 1000;
+}
+
+/* Adding a small shift to the right when hovering over the dropdown link */
+.restaurant-menu-link:hover span{
+    transform: translateX(5px);
+    z-index: 1000;
+}
+
+/* Making the text within the dropdown link bolder on hover */
+.restaurant-menu-link:hover p{
+    font-weight: 600;
+    z-index: 1000;
+}
