@@ -12,25 +12,60 @@ body{
 
 /* Adding padding around the company title */
 .company-title {
-    padding: 8px;
+    padding: 10px;
+    /* added color to title */
+    color: white;
+    
+    
 }
 
 /* Sign in feature */
+    /* edited sign in to be more aesthetic */
 .Signin {
 
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     font-size: large;
-
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 1px 8px rgba(0, 0, 0, 0.14);
+    max-width: 400px; 
+   
+    text-align: center; 
 }
 
-.Login {
-    
+
+/* edited login juan 8/10 */
+.Login { 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    font-size: large;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 1px 8px rgba(0, 0, 0, 0.14);
+    max-width: 400px; 
+   
+    text-align: center; 
+}
+  /* edited log in to be more aesthetic */
+.entirelogin {
     display: flex;
     justify-content: center;
-    font-size: large;
-
+    align-items: center;
+    height: 900px;
 }
+
+.everythingsign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
 
 /* Styling the page */
 .hero{
@@ -39,6 +74,7 @@ body{
     min-height: 100vh;
     background: #eceaff;
     color: #525252;
+    box-shadow: 5px 1px 8px rgba(0, 0, 0, 0.14);
 
 }
 
